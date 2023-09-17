@@ -21,5 +21,5 @@ const getCityId = async (req, res) => {
 }
 
 module.exports = {
-    getCityId,
+    getCityId
 }

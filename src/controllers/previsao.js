@@ -2,7 +2,7 @@ const axios = require('axios')
 
 const obterPrevisao = async (req, res) => {
 
-    const { cityID, days } = req.params
+    const { cityID } = req.params
     let { dias } = req.query
     if (!dias) {
         dias = 1
