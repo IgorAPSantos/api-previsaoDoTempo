@@ -33,4 +33,27 @@ npm run dev
 
 ```
 
+
+#### Como funciona
+
+##### Para obter o id da cidade basta acesar a rota 
+
+``` localhost:3000/cityid/{cityName} ```
+
+Sendo ```cityName``` o nome da cidade ou parte dele.
+
+o retorno será uma array contendo as cidades brasileiras encontradas a partir do cityName informado 
+
 É importante lembrar que a api BrasilApi informa que deve se levar em consideração que o WebService do CPTEC as vezes é instável, então se não encontrar uma determinada cidade, tente buscando por parte de seu nome.
+
+
+
+##### Para obter a previsao através do id da cidade basta acessar a rota 
+
+``` localhost:3000/previsao/{cityID} ```
+
+Sendo ```cityID``` o id da cidade. E sendo opcional passar o parâmetro query ```dias``` com valor de 1 a 6, alterando a quantidade de dias desejado para a previsão
+
+
+
+
